@@ -1,0 +1,288 @@
+/* 1140px */
+@media (max-width: 1140px) {
+  .direction__inner {
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .direction__img,
+  .gallery__item-img {
+    width: 100%;
+  }
+
+  .about__inner {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .gallery__item-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1080px */
+@media (max-width: 1080px) {
+  .header__descr {
+    font-weight: 400;
+
+    color: #ffffff;
+  }
+}
+
+/* 990px */
+@media (max-width: 990px) {
+  .popular__inner {
+    grid-gap: 10px;
+  }
+  .popular__link {
+    min-height: 200px;
+  }
+  .tour__info {
+    grid-gap: 30px 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 800px */
+@media (max-width: 800px) {
+  .header__phone-text {
+    display: none;
+  }
+
+  .travel-info__inner {
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .popular,
+  .tour,
+  .booking {
+    padding: 50px 0;
+  }
+
+  .popular__inner,
+  .tour__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular__link {
+    min-height: 320px;
+  }
+
+  .popular__link:nth-child(3),
+  .popular__link:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .map,
+  .about,
+  .gallery {
+    padding-bottom: 50px;
+  }
+
+  .map__iframe {
+    height: 400px;
+  }
+
+  .about__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about__popup {
+    min-height: 400px;
+  }
+
+  .tour__title {
+    margin-bottom: 40px;
+  }
+
+  .tour__box {
+    column-count: 1;
+  }
+
+  .booking__input {
+    width: 100%;
+  }
+
+  .booking__label {
+    width: 100%;
+    margin-top: -193px;
+    margin-left: 50px;
+  }
+}
+
+/* 660px */
+@media (max-width: 660px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .footer__box {
+    display: block;
+
+    text-align: center;
+  }
+
+  .footer__copy,
+  .footer__address {
+    margin: 0 auto 25px;
+  }
+
+  .booking__btn,
+  .footer__contacts {
+    margin: 0 auto;
+  }
+}
+
+/* 560px */
+@media (max-width: 560px) {
+  .header__title {
+    font-size: 50px;
+  }
+
+  /* Кнопка меню для мобильной версии */
+  .menu__btn {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+
+    display: inline-block;
+
+    width: 40px;
+    height: 30px;
+    padding: 0;
+
+    background-color: transparent;
+  }
+
+  .menu__btn::before,
+  .menu__btn::after {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    content: "";
+
+    background-color: #ffffff;
+  }
+
+  .menu__btn::before {
+    top: 0;
+  }
+
+  .menu__btn::after {
+    bottom: 0;
+  }
+
+  .menu__btn span {
+    display: block;
+
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+  /* Кнопка меню для мобильной версии //end */
+
+  .menu__list {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    padding: 10px 0;
+
+    transform: translateY(-200%);
+
+    background-color: #886239;
+  }
+
+  .menu__list.menu__list--active {
+    transform: translateY(0);
+  }
+
+  .menu__link {
+    display: block;
+
+    padding: 10px;
+
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 30px;
+
+    text-align: center;
+  }
+
+  .header__phone-number {
+    margin-left: 0;
+  }
+
+  .menu {
+    border: none;
+  }
+
+  .direction {
+    padding: 50px 0;
+  }
+
+  .direction__inner {
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .travel-info__inner {
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .popular__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery__item-inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery__title {
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .gallery__top {
+    flex-wrap: wrap;
+  }
+}
+
+/* 460px */
+@media (max-width: 460px) {
+  .direction__inner,
+  .travel-info__inner,
+  .tour__info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about__popup {
+    min-height: 280px;
+  }
+}
+
+/* 340px */
+@media (max-width: 340px) {
+  .about__popup {
+    min-height: 200px;
+  }
+}
